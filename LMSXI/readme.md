@@ -37,6 +37,10 @@ Comezamos...
 
 ### Bases de datos XML nativas
 
+#### BaseX
+
+#### eXistDB
+
 ### Dases de datos documentales
 
 ## UD 7 - Sistemas de xestión empresarial
