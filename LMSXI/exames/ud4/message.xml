@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<correo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/joselv/Desktop/message.xsd">
+  <data>
+  	<ano>1983</ano>
+  	<mes>Xaneiro</mes>
+  	<dia>31</dia>
+  </data>
+  <a>Tove</a>
+  <a>Wally</a>
+  <de>Jani</de>
+  <asunto>Reminder</asunto>
+  <corpo lingua="galego">Cambiar XML Schema por DTD es como cambiar un ferrari por un twingo</corpo>
+</correo>

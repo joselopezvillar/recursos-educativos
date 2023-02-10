@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="correo" type="tipoCorreo" />
+
+  <xs:complexType name="tipoCorreo" >
+    <xs:sequence>
+      <xs:element name="data" type="nestedDate"/>
+      <xs:element name="a" type="xs:string" maxOccurs="unbounded"/>
+      <xs:element name="de" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="asunto" type="xs:string"/>
+      <xs:element name="corpo" type="internationalizedString" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="nestedDate">
+    <xs:sequence>
+      <xs:element name="ano" type="xs:integer"/>
+      <xs:element name="mes" type="xs:string"/>
+      <xs:element name="dia" type="dayOfMonth"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="dayOfMonth">
+  	<xs:restriction base="xs:positiveInteger">
+      <xs:maxInclusive value="31" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+   <xs:simpleType name="tipoLingua">
+<xs:restriction base="xs:string">
+<xs:enumeration value="galego"/>
+<xs:enumeration value="castelan"/>
+</xs:restriction>
+</xs:simpleType>
+
+  <xs:complexType name="internationalizedString">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="lingua" type="tipoLingua" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+
+</xs:schema>
