@@ -1,4 +1,4 @@
 # recursos-educativos
 Repositorio para subir recursos educativos
 
-Utilizado para amosar cousiñas o meul alumnado do CIFP Rodolfo Ucha
+Utilizado para amosar cousiñas o meu alumnado do CIFP Rodolfo Ucha
