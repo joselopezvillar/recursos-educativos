@@ -1,0 +1,7 @@
+https://www.w3schools.com/xml/xsl_elementref.asp
+https://developer.mozilla.org/en-US/docs/Web/XSLT/Transforming_XML_with_XSLT/For_Further_Reading
+
+https://www.jenitennison.com/xslt/
+
+https://nwalsh.com/docs/tutorials/xsl/xsl/slides.html
+https://nwalsh.com/docs/tutorials/xsl/xsl/frames.html

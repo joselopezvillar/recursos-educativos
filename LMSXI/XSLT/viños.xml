@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:06.xslt"?>
+<viños>
+  <viño DO="Rioja">
+    <nome>Marqués de Murrieta</nome>
+    <tipo>Reserva</tipo>
+    <prezo>16</prezo>
+  </viño>
+  <viño DO="Ribera del Duero">
+    <nome>Loes Collection</nome>
+    <tipo>Reserva</tipo>
+    <prezo>34</prezo>
+  </viño>
+  <viño DO="Ribera del Guadiana">
+    <nome>Acilates 2013</nome>
+    <tipo>Reserva</tipo>
+    <prezo>15</prezo>
+  </viño>
+  <viño DO="Rioja">
+    <nome>Faustino</nome>
+    <tipo>Crianza</tipo>
+    <prezo>5</prezo>
+  </viño>
+  <viño DO="Ribera del Duero">
+    <nome>Rolland Galarreta</nome>
+    <tipo>Crianza</tipo>
+    <prezo>16</prezo>
+  </viño>
+  <viño DO="Ribera del Guadiana">
+    <nome>Palacio Quemado Primicia</nome>
+    <tipo>Crianza</tipo>
+    <prezo>6</prezo>
+  </viño>
+  <viño DO="Rioja">
+    <nome>Castillo Ygay 1986</nome>
+    <tipo> Gran Reserva</tipo>
+    <prezo>495</prezo>
+  </viño>
+  <viño DO="Ribera del Duero">
+    <nome>Alonso del Yerro 2012</nome>
+    <tipo>Crianza</tipo>
+    <prezo>21</prezo>
+  </viño>
+  <viño DO="Ribera del Guadiana">
+    <nome>Palacio Quemado Reserva 2011</nome>
+    <tipo>Reserva</tipo>
+    <prezo>9</prezo>
+  </viño>
+  <viño DO="Rioja">
+    <nome>Barón de Ley 2011</nome>
+    <tipo>Reserva</tipo>
+    <prezo>9</prezo>
+  </viño>
+  <viño DO="Ribera del Duero">
+    <nome>Corral del Obispo</nome>
+    <tipo>Crianza</tipo>
+    <prezo>8</prezo>
+  </viño>
+  <viño DO="Ribera del Guadiana">
+    <nome>Carabal Macareno 2007 Magnum 1'5L</nome>
+    <tipo>Crianza</tipo>
+    <prezo>32</prezo>
+  </viño>
+  <viño DO="Ribera del Guadiana">
+    <nome>Jaloco</nome>
+    <tipo>Gran Reserva</tipo>
+    <prezo>***</prezo>
+  </viño>
+</viños>

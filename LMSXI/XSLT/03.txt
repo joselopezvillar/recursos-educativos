@@ -1,0 +1,9 @@
+Exemplo de sort
+Ordenamos... poderíamos escoller so algúns valores?
+
+CURIOSIDADES
+Interesante... que pasa se non poñemos o data type? Cal é a orde por defecto? Para qué serve case-order?
+
+https://www.w3schools.com/xml/ref_xsl_el_sort.asp
+https://stackoverflow.com/questions/4684664/sorting-with-xslt
+https://nwalsh.com/docs/tutorials/xsl/xsl/foil39.html

@@ -1,0 +1,6 @@
+apply-templates
+Selecciona un conxunto de nodos do documento de entrada e instrúe o procesador para aplicar as plantillas indicadas
+
+Referencias
+https://www.w3schools.com/xml/xsl_apply_templates.asp
+https://www.w3schools.com/xml/ref_xsl_el_apply-templates.asp

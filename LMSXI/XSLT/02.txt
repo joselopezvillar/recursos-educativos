@@ -1,0 +1,6 @@
+Exemplo de for-each
+Iteramos... xa temos os valores. Poderíamos ordenar?
+
+Referencias
+https://www.w3schools.com/xml/xsl_for_each.asp
+https://nwalsh.com/docs/tutorials/xsl/xsl/foil31.html

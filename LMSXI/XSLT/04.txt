@@ -1,0 +1,5 @@
+xsl-if
+Para mostrar so os que cumpren unha condición. Pero se queremos o equivalente a unha switch/case en moitas linguaxes?
+
+Referencias
+https://www.w3schools.com/xml/xsl_if.asp

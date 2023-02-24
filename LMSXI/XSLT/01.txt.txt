@@ -1,0 +1,7 @@
+Exemplo de value-of e template
+
+Solo muestra el primer valor... hay que iterar
+
+Referencias:
+https://www.w3schools.com/xml/xsl_templates.asp
+https://www.w3schools.com/xml/xsl_value_of.asp
