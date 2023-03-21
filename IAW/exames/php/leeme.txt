@@ -1,0 +1,36 @@
+DOCUMENTACIÓN IMPORTANTE
+El proyecto arranca solo con acceder a localhost.
+La conexión a base de datos es configurable editando fichero conector.php
+
+Sobre el formulario de login
+El formulario de login, la información se pasa por post, porque es un ejercicio académico. En el "mundo real", se haría mediante un POST
+
+Sobre la contraseña
+Está guardada en base de datos en claro. En mundo real habría que hashear y saltear
+
+Sobre la seguridad de las consultas
+Las consultas habría que hacerlas mediante preparedStamements, tanto por temas de rendimiento, como por cuestiones de seguridad para evitar SQL Injections
+
+Sobre los campos de formularios
+Habría que realizar validaciones de los campos, y mejor control y tratamiento de errores
+
+Sobre el código
+Es un auténtico spagueti code de remiendos rápidos para terminar en tiempo. Requeriría:
+* refactorización
+* documentación con comentarios del código y phpdoc
+* pruebas unitarias con phpUnit
+
+Sobre la funcionalidad que faltó implementar
+La idea de la aplicación está realizada en su práctica totalidad. 
+Por cuestiones de tiempo, simule con hardcode:
+* la parte del carrito (también con el botón añadir) y el pago
+* y en la parte del pago, dejo como comentario parte del código sin lanzar
+
+Lo habitual en el caso del botón añadir sería posiblemente implementar una parte con Javascript en el lado del cliente
+
+Valoración personal
+Me pareció un examen muy interesante, pero creo que es excesivo pedir en dos horas el equivalente a prácticas para las que se ha dado un plazo de meses,
+Creo que comparado con la 1ª evaluación, salvo que en la calificación se haga de forma razonablemente benévola y con ajustes esitlo campana de gauss...
+... las notas serás muy inferiores. En mi caso me voy con un sabor agridulce. Creo que sabría implementar todo.... pero necesitaría como poco 1 hora más.
+
+Y eso que parte del código ya lo cogí de mi repositorio de github, como por ejemplo el formulario de login.
