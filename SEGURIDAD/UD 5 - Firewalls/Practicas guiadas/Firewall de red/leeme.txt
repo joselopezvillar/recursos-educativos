@@ -1,0 +1,14 @@
+Al descomprimir el fichero el script escenario_dmz.sh debería tener permisos de ejecución:
+
+-rwxr-xr-x 1 manuel manuel 3,8K abr 1 12:07 escenario_dmz.sh*
+
+En caso de no tenerlos, hay que dárselos antes de ejecutarlo:
+
+chmod 755 escenario_dmz.sh
+
+El script crea 3 redes LXD y asigna la 1ª IP de cada red al equipo anfitrión:
+
+red wan --> 192.0.2.1/24
+red lan --> 192.168.100.1/24
+red dmz --> 172.16.0.1/16
+Si alguna de esas redes ya las estáis usando, por ejemplo como red real de casa/trabajo o en Virtualbox, podéis editar el script con un editor de texto y cambiarlas. La forma más sencilla es coger el prefijo de red y usar la funcionalidad del editor de buscar&reemplazar todo.
