@@ -1,6 +1,6 @@
 
 
-= Servicio DHCP: Parámetros de configuraciónURL =
+# Servicio DHCP: Parámetros de configuraciónURL
 
 Enlace a unos apuntes donde se explica el protocolo DHCP y se detalla el significado de los parámetros de configuración del servicio:
 https://www.fpgenred.es/DHCP/index.html
