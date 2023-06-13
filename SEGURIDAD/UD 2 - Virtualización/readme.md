@@ -6,7 +6,7 @@
 * Lectura del pdf Modos de red en virtualbox
 * Lectura del pdf Vagrant: qué es Vagrant, terminología, estudio y comprensión de las imágenes relativas al concepto de Infrastructure as code (IaC) y flujo de trabajo de Vagrant.
 * Escenario prácticos:
- * Escenario #1: instalación de Vagrant en el equipo real y primer despliegue básico.
+ ** Escenario #1: instalación de Vagrant en el equipo real y primer despliegue básico.
  * Escenario #2: despliegue de un sistema LAMP (Linux Apache MySQL PHP).
  * Escenario #3: despliegue de un cluster de servidor web y servidor de base de datos.
  * Escenario #4: despliegue de un cluster de 3 servidores web.
