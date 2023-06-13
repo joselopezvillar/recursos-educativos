@@ -2,5 +2,5 @@
 
 [Titorial de Docker en castelán] (https://www.youtube.com/watch?v=cKfHZcce6xs)
 
-[iutorial de Docker en inglés] (https://www.youtube.com/watch?v=fqMOX6JJhGo&t=5188s)
+[Titorial de Docker en inglés] (https://www.youtube.com/watch?v=fqMOX6JJhGo&t=5188s)
 
