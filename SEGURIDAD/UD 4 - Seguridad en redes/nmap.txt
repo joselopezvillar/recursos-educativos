@@ -1,0 +1,49 @@
+Nmap scan report for 10.0.0.104
+Host is up (0.00057s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE      VERSION
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Windows Server 2003 3790 microsoft-ds
+1025/tcp open  msrpc        Microsoft Windows RPC
+1026/tcp open  msrpc        Microsoft Windows RPC
+8089/tcp open  ssl/http     Splunkd httpd
+|_http-server-header: Splunkd
+|_http-title: splunkd
+| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
+| Not valid before: 2018-02-10T06:05:40
+|_Not valid after:  2021-02-09T06:05:40
+|_ssl-date: 2018-02-12T00:51:45+00:00; 0s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|_    SSL2_RC2_128_CBC_WITH_MD5
+MAC Address: 08:00:27:2C:3E:44 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Microsoft Windows XP|2003
+OS CPE: cpe:/o:microsoft:windows_xp::sp2:professional cpe:/o:microsoft:windows_server_2003
+OS details: Microsoft Windows XP Professional SP2 or Windows Server 2003
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_server_2003
+
+Host script results:
+|_nbstat: NetBIOS name: SECURITYNIK-2K3, NetBIOS user: <unknown>, NetBIOS MAC: 08:00:27:2c:3e:44 (Oracle VirtualBox virtual NIC)
+| smb-os-discovery: 
+|   OS: Windows Server 2003 3790 (Windows Server 2003 5.2)
+|   OS CPE: cpe:/o:microsoft:windows_server_2003::-
+|   Computer name: securitynik-2k3
+|   NetBIOS computer name: SECURITYNIK-2K3\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2018-02-11T19:51:43-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.57 ms 10.0.0.104
