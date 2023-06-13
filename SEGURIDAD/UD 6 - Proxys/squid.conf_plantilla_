@@ -1,0 +1,34 @@
+http_port
+
+visible_hostname
+cache_mgr
+error_default_language
+
+
+cache_effective_user proxy
+cache_effective_group proxy
+
+access_log /var/log/squid/access.log
+cache_log /var/log/squid/cache.log
+cache_store_log none
+logfile_rotate
+debug_options rotate=
+
+cache_mem
+maximum_object_size_in_memory
+memory_replacement_policy heap GDSF
+cache_replacement_policy heap LFUDA
+cache_dir ufs /var/spool/squid
+minimum_object_size
+maximum_object_size
+offline_mode off
+cache_swap_low 90
+cache_swap_high 95
+
+acl allsrc src all
+acl safeports port 21 70 80 210 280 443 488 563 591 631 777 901  3128 3127 1025-65535 
+acl sslports port 443 563  
+acl connect method CONNECT
+
+http_access deny !safeports
+http_access deny connect !sslports
