@@ -1,0 +1,12 @@
+De decimal a binario:
+https://www.youtube.com/watch?v=_kDPcXgLTu4
+Minuto 3
+
+Cambio de bases Binario, Octal, Hexadecimal:
+https://www.youtube.com/watch?v=WS3-gXCfiOM&list=ULcORUhAq6t5k&index=7252
+
+Suma binaria
+https://www.youtube.com/watch?v=2ql1-KMHHfc
+
+Puertas Lógicas básicas.
+https://www.youtube.com/watch?v=3RdYESXFSbo
