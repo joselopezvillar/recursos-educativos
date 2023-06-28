@@ -1,0 +1,9 @@
+a tarea de esta unidad utiliza una versión de moodle antigua, la cual no tiene las mismas carpetas de configuración que las versiones actuales. 
+
+En lugar de instalar la versión que solicita el enunciado, deberéis instalar una versión actual (A partir de la 4.0) y realizar los siguientes apartados:
+
+1. Incluir un logotipo en el tema por defecto para que se muestre tanto en la pantalla de inicio de sesión como una vez dentro de la aplicación web de moodle.
+
+2. Descargar, instalar y seleccionar un nuevo tema para moodle.
+
+Debéis sacar capturas de los pasos realizados para llevar a cabo cada una de las acciones solicitadas y crear una pdf con las mismas y las explicaciones que creáis convenientes.
