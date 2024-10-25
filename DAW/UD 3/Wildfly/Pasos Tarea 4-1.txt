@@ -1,0 +1,27 @@
+sudo rm /etc/cron.daily/apt-compat
+
+
+sudo apt update
+sudo apt install default-jdk
+java --version
+wget https://github.com/wildfly/wildfly/releases/download/26.0.0.Final/wildfly-26.0.0.Final.tar.gz
+tar -xf wildfly-*.Final.tar.gz
+sudo mv wildfly-*Final /opt/wildfly ((OJO ERROR!!!!! - Corregido))
+sudo groupadd -r wildfly
+sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
+sudo chown -RH wildfly:wildfly /opt/wildfly/
+sudo mkdir -p /etc/wildfly
+sudo cp /opt/wildfly/docs/contrib/scripts/systemd/wildfly.conf /etc/wildfly/
+sudo cp /opt/wildfly/docs/contrib/scripts/systemd/wildfly.service /etc/systemd/system/
+
+sudo cp /opt/wildfly/docs/contrib/scripts/systemd/launch.sh /opt/wildfly/bin/
+sudo chmod +x /opt/wildfly/bin/*.sh
+sudo systemctl enable --now wildfly
+sudo systemctl daemon-reload
+systemctl status wildfly
+sudo sh /opt/wildfly/bin/add-user.sh
+sudo nano /etc/wildfly/wildfly.conf
+  WILDFLY_BIND= 127.0.0.1
+sudo systemctl restart wildfly
+
+	http://127.0.0.1:8080
