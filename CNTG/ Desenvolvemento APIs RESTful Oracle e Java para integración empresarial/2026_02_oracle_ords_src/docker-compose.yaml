@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  oracle-db:
+    image: container-registry.oracle.com/database/free:23.26.0.0-arm64
+    container_name: oracle-db
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PASSWORD=Welcome_123
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+      # Montar scripts de inicialización que configuran la contraseña al arrancar
+      - ./scripts/startup:/opt/oracle/scripts/startup
+    networks:
+      - oracle_network
+    healthcheck:
+      # Verificar que Oracle esté aceptando conexiones y la PDB esté abierta
+      test: ["CMD-SHELL", "lsnrctl status | grep -q 'READY' && echo 'SELECT 1 FROM dual;' | sqlplus -s / as sysdba > /dev/null"]
+      interval: 30s
+      timeout: 10s
+      retries: 15
+      start_period: 60s
+
+  ords:
+    image: container-registry.oracle.com/database/ords:latest
+    container_name: ords
+    ports:
+      - "8181:8080"
+    environment:
+      # Configuración usando el CDB en lugar de la PDB
+      - DBHOST=oracle-db
+      - DBPORT=1521
+      - DBSERVICENAME=freepdb1
+      - ORACLE_PWD=Welcome_123
+    depends_on:
+      oracle-db:
+        condition: service_healthy
+    networks:
+      - oracle_network
+    restart: on-failure
+    volumes:
+      - ords_config:/etc/ords/config
+
+volumes:
+  oracle_data:
+  ords_config:
+
+networks:
+  oracle_network:
